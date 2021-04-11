@@ -50,4 +50,19 @@
     + Debug
     + View logs 
 
+## Pods: 
 
++ A pod is the smallest deployable unit in the Kubernetes and not containers 
++ Inside your pod, there is always your main container, this main container represent your application, i.e. Node.js, Golang, etc. 
++ There is also "Init container", which are container that must be executed before the main container. 
++ Side car container, which are containers that support your main container. For example, there might be a container that acts as a 
+proxy to the main container
++ Inside the pod, there are also Volume, which is how data are shared between containers.
++ The way containers communcate is through a localhost, each pods has their own ip address, which means that if another pod wants to talk to
+the current pod, it will use the unique ip address of the current pod. 
+
+![Pods](/media/pods.png)
+
++ Smallest Deployable Unit: 
+- Docker: Containers
+- Kubernetes: Pods
