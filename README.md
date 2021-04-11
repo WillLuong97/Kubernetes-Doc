@@ -15,6 +15,39 @@
 ### Kubernetes Cluster: 
 ![Kubernetes-Cluster](/media/Kub-Cluster.png)
 
-- Master node: is simply the brain of the cluster
+- Master node: is simply the brain of the cluster, where all of the logic and decision are made. 
 
-- Worker node: 
+- Worker node: All the heavy lifting happens, such as running your application.
+
+- Both master and worker node communicate with each other via the kubectl.
+
+- Within a cluster, there are often more than one worker node. 
+
+![Kubernetes-Cluster-Multiple](/media/Kub-Cluster-2.png)
+
+- As the cluster expands, there are more worker cluster to handle by the master node, which forms the concept of a Control Plane
+
+![Control-Plane](/media/Control-Plane.png)
+
+
+## minikube
+- When we need to run a local cluster, it is important that we use the Minikube
+
+- You should use Minikube because: 
+    + Great community
+    + Add-ons and lots of features. 
+    + Great documentation
+
+- Installation: Docker + Minikube
+
+## Kubectl
+
++ Kubernetes Command Line Tool
++ Run commands against your cluster
+    + Deploy
+    + Inspect
+    + Edit resources
+    + Debug
+    + View logs 
+
+
